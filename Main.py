@@ -1,15 +1,34 @@
 import os
 from dotenv import load_dotenv
 from Gemini import GeminiService
+from Database import DatabaseManager
 
 #loading environment variables that saved on .env file
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-#initilaize the GeminiService with the API key
-gemini = GeminiService(api_key=GEMINI_API_KEY)
+#Gemini Part
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-#testing the generate_response method
-prompt = "recommend me a cheap laptop for programming"
-response = gemini.generate_response(prompt)
-print(response)
+# #initilaize the GeminiService with the API key
+# gemini = GeminiService(api_key=GEMINI_API_KEY)
+
+# #testing the generate_response method
+# prompt = "recommend me a cheap laptop for programming"
+# response = gemini.generate_response(prompt)
+# print(response)
+
+#Database Part
+
+#initialize the database
+db = DatabaseManager()
+#will ignore this even if the table already exists, so it's safe to call it every time
+db.create_table()
+
+#adding the product from the products.txt file to the database
+#db.add_products_from_text_file("products.txt")
+
+#check if product added
+all_products = db.get_all_products()
+print(f"Total products in database: {len(all_products)}")
+for product in all_products:
+    print(dict(product))  # Print each product as a dictionary

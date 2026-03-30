@@ -1,0 +1,101 @@
+Name,Description,Category,Price
+Lenovo IdeaPad 1,Affordable laptop with 8GB RAM,laptop,599.99
+Dell Inspiron 2,Mid-range laptop suitable for students,laptop,749.50
+MacBook Pro 3,Premium laptop for professionals,laptop,2499.99
+Asus ZenBook 4,Lightweight laptop with long battery life,laptop,1299.00
+HP Pavilion 5,Budget-friendly laptop for everyday use,laptop,649.99
+Acer Swift 6,Slim laptop with fast SSD,laptop,899.99
+Microsoft Surface 7,Touchscreen laptop for creative work,laptop,1099.50
+Razer Blade 8,Gaming laptop with RTX 3070,laptop,2199.00
+LG Gram 9,Ultra-lightweight laptop with 16GB RAM,laptop,1199.99
+Huawei MateBook 10,Stylish laptop for office use,laptop,999.99
+HP Envy Desktop 11,High-performance desktop for home and office,desktop,1299.99
+Dell XPS Desktop 12,Powerful desktop with Intel i7,desktop,1499.50
+Custom Gaming PC 13,PC built for gaming with RTX 3080,desktop,2599.00
+Lenovo ThinkCentre 14,Business desktop with reliability,desktop,899.99
+Acer Aspire Desktop 15,Affordable desktop for general use,desktop,699.00
+Corsair One 16,Compact desktop with liquid cooling,desktop,1999.99
+Apple iMac 17,All-in-one desktop with Retina display,desktop,1799.99
+Asus ROG Desktop 18,Gaming desktop with RGB lights,desktop,2199.50
+MSI Creator Desktop 19,Desktop for designers and creators,desktop,2499.99
+CyberPowerPC Gamer 20,Budget gaming desktop with GTX 1660,desktop,799.99
+NVIDIA RTX 4080 21,High-end graphics card for gaming,pc_component,1499.99
+AMD Ryzen 7 5800X 22,8-core CPU for gaming and productivity,pc_component,399.99
+Corsair 16GB RAM 23,DDR4 memory module,pc_component,79.99
+Samsung 1TB SSD 24,Fast storage solution,pc_component,109.99
+Asus Motherboard B550 25,Motherboard for AMD CPUs,pc_component,159.99
+Cooler Master CPU Cooler 26,Air cooler for desktops,pc_component,49.99
+Seagate 2TB HDD 27,Additional storage for PC,pc_component,59.99
+EVGA 750W PSU 28,Reliable power supply unit,pc_component,99.99
+Logitech G502 Mouse 29,Gaming mouse with programmable buttons,pc_component,49.99
+Corsair K70 Keyboard 30,Mechanical keyboard with RGB,pc_component,129.99
+Nike T-Shirt 31,Comfortable cotton t-shirt,clothing,29.99
+Adidas Hoodie 32,Warm and stylish hoodie,clothing,69.99
+Levi's Jeans 33,Classic denim jeans,clothing,59.99
+Uniqlo Jacket 34,Lightweight windbreaker jacket,clothing,49.99
+Puma Sneakers 35,Sports shoes for running and casual wear,clothing,89.99
+Under Armour Shorts 36,Breathable sports shorts,clothing,34.99
+North Face Coat 37,Winter coat with insulation,clothing,149.99
+H&M Dress 38,Casual dress for everyday wear,clothing,39.99
+Reebok Socks 39,Pack of 3 comfortable socks,clothing,12.99
+Columbia Hiking Boots 40,Durable boots for outdoor adventures,clothing,129.99
+Office Chair 41,Ergonomic chair for home or office,misc,199.99
+Logitech Wireless Mouse 42,Wireless mouse for PC,misc,29.99
+Mechanical Keyboard 43,RGB backlit keyboard,misc,119.99
+Water Bottle 44,Stainless steel reusable bottle,misc,24.99
+Desk Lamp 45,LED lamp with adjustable brightness,misc,39.99
+Backpack 46,Durable backpack for school or travel,misc,59.99
+Bluetooth Headphones 47,Noise-canceling headphones,misc,129.99
+Smart Watch 48,Track your fitness and notifications,misc,199.99
+Portable Speaker 49,Wireless Bluetooth speaker,misc,89.99
+Yoga Mat 50,Non-slip exercise mat,misc,39.99
+Lenovo IdeaPad 51,Affordable laptop with 8GB RAM,laptop,599.99
+Dell Inspiron 52,Mid-range laptop suitable for students,laptop,749.50
+MacBook Pro 53,Premium laptop for professionals,laptop,2499.99
+Asus ZenBook 54,Lightweight laptop with long battery life,laptop,1299.00
+HP Pavilion 55,Budget-friendly laptop for everyday use,laptop,649.99
+Acer Swift 56,Slim laptop with fast SSD,laptop,899.99
+Microsoft Surface 57,Touchscreen laptop for creative work,laptop,1099.50
+Razer Blade 58,Gaming laptop with RTX 3070,laptop,2199.00
+LG Gram 59,Ultra-lightweight laptop with 16GB RAM,laptop,1199.99
+Huawei MateBook 60,Stylish laptop for office use,laptop,999.99
+HP Envy Desktop 61,High-performance desktop for home and office,desktop,1299.99
+Dell XPS Desktop 62,Powerful desktop with Intel i7,desktop,1499.50
+Custom Gaming PC 63,PC built for gaming with RTX 3080,desktop,2599.00
+Lenovo ThinkCentre 64,Business desktop with reliability,desktop,899.99
+Acer Aspire Desktop 65,Affordable desktop for general use,desktop,699.00
+Corsair One 66,Compact desktop with liquid cooling,desktop,1999.99
+Apple iMac 67,All-in-one desktop with Retina display,desktop,1799.99
+Asus ROG Desktop 68,Gaming desktop with RGB lights,desktop,2199.50
+MSI Creator Desktop 69,Desktop for designers and creators,desktop,2499.99
+CyberPowerPC Gamer 70,Budget gaming desktop with GTX 1660,desktop,799.99
+NVIDIA RTX 4080 71,High-end graphics card for gaming,pc_component,1499.99
+AMD Ryzen 7 72,8-core CPU for gaming and productivity,pc_component,399.99
+Corsair 16GB RAM 73,DDR4 memory module,pc_component,79.99
+Samsung 1TB SSD 74,Fast storage solution,pc_component,109.99
+Asus Motherboard B550 75,Motherboard for AMD CPUs,pc_component,159.99
+Cooler Master CPU Cooler 76,Air cooler for desktops,pc_component,49.99
+Seagate 2TB HDD 77,Additional storage for PC,pc_component,59.99
+EVGA 750W PSU 78,Reliable power supply unit,pc_component,99.99
+Logitech G502 Mouse 79,Gaming mouse with programmable buttons,pc_component,49.99
+Corsair K70 Keyboard 80,Mechanical keyboard with RGB,pc_component,129.99
+Nike T-Shirt 81,Comfortable cotton t-shirt,clothing,29.99
+Adidas Hoodie 82,Warm and stylish hoodie,clothing,69.99
+Levi's Jeans 83,Classic denim jeans,clothing,59.99
+Uniqlo Jacket 84,Lightweight windbreaker jacket,clothing,49.99
+Puma Sneakers 85,Sports shoes for running and casual wear,clothing,89.99
+Under Armour Shorts 86,Breathable sports shorts,clothing,34.99
+North Face Coat 87,Winter coat with insulation,clothing,149.99
+H&M Dress 88,Casual dress for everyday wear,clothing,39.99
+Reebok Socks 89,Pack of 3 comfortable socks,clothing,12.99
+Columbia Hiking Boots 90,Durable boots for outdoor adventures,clothing,129.99
+Office Chair 91,Ergonomic chair for home or office,misc,199.99
+Logitech Wireless Mouse 92,Wireless mouse for PC,misc,29.99
+Mechanical Keyboard 93,RGB backlit keyboard,misc,119.99
+Water Bottle 94,Stainless steel reusable bottle,misc,24.99
+Desk Lamp 95,LED lamp with adjustable brightness,misc,39.99
+Backpack 96,Durable backpack for school or travel,misc,59.99
+Bluetooth Headphones 97,Noise-canceling headphones,misc,129.99
+Smart Watch 98,Track your fitness and notifications,misc,199.99
+Portable Speaker 99,Wireless Bluetooth speaker,misc,89.99
+Yoga Mat 100,Non-slip exercise mat,misc,39.99
