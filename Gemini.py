@@ -52,13 +52,23 @@ class GeminiService:
                 "max_price": None
             }
 
-    def recommend(self, query, products):
+    def recommend(self, query, products, memory=None):
+
+        context = ""
+
+        if memory:
+            for m in memory:
+                context += f"user: {m['user']}\nbot: {m['bot']}\n"
+
         product_text = "\n".join([
             f"{p['name']} - {p['description']} - {p['category']} - ${p['price']}" 
             for p in products
         ])
 
         prompt = f"""
+        Conversation History:
+        {context}
+        
         user query: "{query}"
 
         Here are some matching products based on the user's query:
@@ -75,9 +85,23 @@ class GeminiService:
 
 
 
-    def generate_response(self, prompt: str):
+    def generate_response(self, prompt: str, memory=None):
+
+        context = ""
+
+        if memory:
+            for m in memory:
+                context += f"user: {m['user']}\nbot: {m['bot']}\n"
+        
+        full_prompt = f"""
+        Conversation history:
+        {context}
+        
+        user: {prompt}
+        Bot should generate a helpful response based on the conversation history and the new user query.
+        """
         response = self.client.models.generate_content(
             model=self.model,
-            contents=prompt,
+            contents=full_prompt,
         )
         return response.text
