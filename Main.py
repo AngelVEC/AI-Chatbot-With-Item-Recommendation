@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from Gemini import GeminiService
 from Database import DatabaseManager
+from Chatbot import Chatbot
 
 #loading environment variables that saved on .env file
 load_dotenv()
@@ -11,22 +12,35 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 #initilaize the GeminiService with the API key
 gemini = GeminiService(api_key=GEMINI_API_KEY)
+db = DatabaseManager("products.db")
 
-#testing the generate_response method
+bot = Chatbot(gemini, db)
+
 while True:
-    prompt = input("Please write your message (type 'exit' or 'quit' to close the chat): ")
-    if prompt.lower() in ['exit', 'quit']:
+    query = input("Please write your message (type 'exit' or 'quit' to close the chat): ")
+    if query.lower() in ['exit', 'quit']:
         print("Goodbye!")
         break
 
-    #print the user's message
-    print("You:", prompt + "\n")
-
-    #generate the response
-    response = gemini.generate_response(prompt)
-
-    #print the response
+    response = bot.handle_query(query)
     print("Bot:", response + "\n")
+
+
+# #testing the generate_response method
+# while True:
+#     prompt = input("Please write your message (type 'exit' or 'quit' to close the chat): ")
+#     if prompt.lower() in ['exit', 'quit']:
+#         print("Goodbye!")
+#         break
+
+#     #print the user's message
+#     print("You:", prompt + "\n")
+
+#     #generate the response
+#     response = gemini.generate_response(prompt)
+
+#     #print the response
+#     print("Bot:", response + "\n")
 
 #Database Part
 
