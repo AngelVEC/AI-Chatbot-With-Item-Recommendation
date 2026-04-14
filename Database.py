@@ -41,11 +41,29 @@ class DatabaseManager:
         self.cursor.execute("SELECT * FROM products")
         return self.cursor.fetchall()
     
-    def search_products(self, keyword):
-        """Search for products by name or description"""
-        self.cursor.execute("""
-            SELECT * FROM products
-            WHERE name LIKE ? OR description LIKE ?
-        """, (f'%{keyword}%', f'%{keyword}%'))
+    def search_products(self, intent):
+        "Search the products based on the extracted intent"
+        query = "SELECT * FROM products WHERE 1=1"
+        params = []
+
+        # Category filter
+        if intent.get("category"):
+            query += " AND category = ?"
+            params.append(intent["category"])
+
+        # Price filter
+        if intent.get("max_price") is not None:
+            query += " AND price <= ?"
+            params.append(intent["max_price"])
+
+        # Keyword filter (search in name and description) - case insensitive
+        if intent.get("keywords"):
+            query += " AND (" + " OR ".join(
+                ["name LIKE ? OR description LIKE ?" for _ in intent["keywords"]]
+            ) + ")"
+            for kw in intent["keywords"]:
+                params.extend([f"%{kw}%", f"%{kw}%"])
+
+        self.cursor.execute(query, params)
         return self.cursor.fetchall()
         
