@@ -4,6 +4,7 @@ class Chatbot:
         self.database = database
         self.memory = []
     
+    #method to handle the query from the user, extract the intent, search for products, and generate a response
     def handle_query(self, user_query):
         intent = self.gemini_service.extract_intent(user_query)
 
@@ -22,5 +23,5 @@ class Chatbot:
         #storing the memory of the conversation
         self.memory.append({"user": user_query, "bot": response})
         self.memory = self.memory[-5:]  # Keep only the last 5 conversations in memory
-        
+
         return response

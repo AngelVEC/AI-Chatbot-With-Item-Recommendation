@@ -6,7 +6,9 @@ class GeminiService:
         self.client = genai.Client(api_key=api_key)
         self.model = model
 
+    # method to extract intent from the user query
     def extract_intent(self, user_query: str):
+
         prompt = f"""
         You are an intent parser for a product search system.
 
@@ -39,6 +41,7 @@ class GeminiService:
         User query:
         "{user_query}"
         """
+
         response = self.client.models.generate_content(
             model=self.model,
             contents=prompt,
@@ -52,6 +55,7 @@ class GeminiService:
                 "max_price": None
             }
 
+    # method to recommended products based on the user query and search results from the database
     def recommend(self, query, products, memory=None):
 
         context = ""
@@ -68,7 +72,7 @@ class GeminiService:
         prompt = f"""
         Conversation History:
         {context}
-        
+
         user query: "{query}"
 
         Here are some matching products based on the user's query:
@@ -84,7 +88,7 @@ class GeminiService:
         return response.text
 
 
-
+    # method to generate a response when no product founds or to help the user to choose based on the recent conversation
     def generate_response(self, prompt: str, memory=None):
 
         context = ""

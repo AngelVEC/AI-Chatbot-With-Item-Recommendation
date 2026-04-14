@@ -12,10 +12,14 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 #initilaize the GeminiService with the API key
 gemini = GeminiService(api_key=GEMINI_API_KEY)
+
+#Initializing the database
 db = DatabaseManager("products.db")
 
+#initializing the chatbot with gemini and the database
 bot = Chatbot(gemini, db)
 
+#start the chat loop
 while True:
     query = input("Please write your message (type 'exit' or 'quit' to close the chat): ")
     if query.lower() in ['exit', 'quit']:
